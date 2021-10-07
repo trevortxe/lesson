@@ -1,0 +1,453 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "MuseoCyrl-900";
+  src: url("../fonts/MuseoCyrl-900.woff") format("woff"),
+    url("../fonts/MuseoCyrl-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MuseoCyrl-300";
+  src: url("../fonts/MuseoCyrl-300.woff") format("woff"),
+    url("../fonts/MuseoCyrl-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  /*font-family: "MuseoCyrl-300";*/
+  font-family: Arial, Helvetica, sans-serif;
+  color: #202020;
+}
+img {
+  max-width: 100%;
+}
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  position: fixed;
+  background-color: #f1f1f1;
+  padding: 22px 0;
+}
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  border: 1px solid red;
+  margin: auto;
+}
+.login {
+  color: #202020;
+  font-family: Tahoma;
+  font-style: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+.nav-link {
+  color: #202020;
+  font-family: Tahoma;
+  font-style: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+/* Главная секция */
+.hero {
+  padding-top: 62px;
+  padding-bottom: 71px;
+  margin-top: 60px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+}
+.image-block {
+  position: relative;
+  margin-right: 122px;
+}
+.sale-label {
+  position: absolute;
+  right: 0;
+  top: 23px;
+  font-size: 19px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #c93535;
+  padding: 13px 17px;
+}
+.autor {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+.title {
+  margin-top: 0;
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 48px;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 49px;
+}
+.info-text {
+  font-size: 16px;
+  flex-basis: 45%;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.pricetag {
+  font-weight: 400;
+  font-size: 55px;
+  margin-right: 64px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.favorites {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 22px 50px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+.button:hover {
+  background-color: yelow;
+}
+.button_primary {
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.button_outline {
+  color: #f89c02;
+  border: 2px solid #f89c02;
+  text-decoration: none;
+}
+/*О книге*/
+.about {
+  background-color: #f1f1f1;
+  padding: 99px 0;
+}
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1140px;
+  margin: auto;
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.about-book {
+  max-width: 454px;
+  flex-shrink: 0;
+}
+.about-autor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 552px;
+  box-shadow: 0 1 120px rgba(161, 161, 161, 0.08);
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  background: #ffffff;
+  padding: 58px 63px;
+}
+.about-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.autor-link {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+.autor-avatar {
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 21px;
+}
+.autor-text {
+  margin-top: 24px;
+  flex-basis: 100%;
+}
+.autor-name {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+/*Галерея фото*/
+.about-container {
+  max-width: 1140;
+  margin: auto;
+}
+.photo-gallery {
+  padding: 120px 120px;
+  text-align: center;
+}
+
+/*Подвал*/
+.footer {
+  background: rgb(223, 223, 223);
+}
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-list {
+  padding: 0;
+  list-style: none;
+}
+.list-item {
+  margin-bottom: 16px;
+}
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  padding: 7px 10px;
+}
+@media (max-width: 1200px) {
+  .header-contariner,
+  .hero-container,
+  .about-container,
+  .people-container,
+  .footer-container {
+    max-width: 960px;
+  }
+  .image-block {
+    min-width: 390px;
+    max-width: 390px;
+    margin-right: 30px;
+  }
+  .about-book {
+    max-width: 367px;
+  }
+  .photo-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 992px) {
+  .header-contariner,
+  .hero-container,
+  .about-container,
+  .people-container,
+  .footer-container {
+    max-width: 760px;
+  }
+  .nav {
+    display: none;
+  }
+  .logo,
+  .login {
+    padding: 0 40px;
+  }
+  .image-block {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .autor {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+  .title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .info {
+    margin-bottom: 19px;
+  }
+  .info-text {
+    font-size: 16px;
+  }
+  .age,
+  .format {
+    flex-grow: 1;
+  }
+  .price {
+    margin-bottom: 39px;
+  }
+  .pricetag {
+    font-size: 30px;
+  }
+  .button {
+    padding: 20px 40px;
+  }
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 29px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  .about-book {
+    margin: auto;
+    max-width: 80%;
+    margin-bottom: 62px;
+  }
+  .about-autor {
+    max-width: 70%;
+    margin: auto;
+  }
+  .requisites,
+  .information {
+    margin-right: 70px;
+  }
+  .photo-gallery {
+    display: block;
+  }
+  .one-gallery {
+    width: 100px;
+    height: 100px;
+    flex-wrap: nowrap;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .header-contariner,
+  .hero-container,
+  .about-container,
+  .people-container,
+  .footer-container {
+    max-width: 560px;
+  }
+  .hero-container {
+    flex-wrap: wrap;
+  }
+  .hero {
+    padding-top: 40px;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .price {
+    justify-content: center;
+  }
+  .image-block {
+    min-width: 100%;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  .about-autor {
+    padding: 35px 35px;
+    text-align: center;
+    vertical-align: top;
+    line-height: 1.4em;
+    font-size: 14px;
+    max-width: 85%;
+  }
+  .autor-bio {
+    margin: auto;
+  }
+  .photo-gallery {
+    display: flex;
+  }
+  .one-gallery {
+    width: 140px;
+    height: 140px;
+    flex-wrap: nowrap;
+  }
+  title {
+    font-size: 23px;
+  }
+  .subtitle {
+    font-size: 23px;
+  }
+  .footer-container {
+    line-height: 0.9em;
+    font-size: 13px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+  }
+  .information {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .header-contariner,
+  .hero-container,
+  .about-container,
+  .people-container,
+  .footer-container {
+    width: 95%;
+  }
+  .autor {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  title {
+    font-size: 36px;
+    margin-bottom: 19px;
+  }
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .info {
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+  }
+  .info-text {
+    flex-basis: 100%;
+    margin-bottom: 19px;
+  }
+}
